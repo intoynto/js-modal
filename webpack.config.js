@@ -33,7 +33,7 @@ module.exports=function(env,args)
         plugins:[
             new CleanWebpackPlugin(),                     
             new TypescriptDeclarationPlugin({
-                out:`${dev.MODUL_NAME}`,
+                out:`${dev.MODUL_NAME}.d.ts`,
             })
         ],
         //stats:"detailed",
