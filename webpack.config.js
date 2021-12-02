@@ -31,12 +31,10 @@ module.exports=function(env,args)
             "react-dom":"react-dom"
         },
         plugins:[
-            new CleanWebpackPlugin(),       
-            /* new DeclarationBundlerPlugin({
-                moduleName:'"intoy-chosen"',
-                out:'./chosen.d.ts',
-            })   */      
-            new TypescriptDeclarationPlugin({})
+            new CleanWebpackPlugin(),                     
+            new TypescriptDeclarationPlugin({
+                out:`${dev.MODUL_NAME}`,
+            })
         ],
         //stats:"detailed",
         module:{
