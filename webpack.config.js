@@ -1,5 +1,6 @@
 const path=require("path");
 //const DeclarationBundlerPlugin = require('types-webpack-bundler');
+const TypescriptDeclarationPlugin = require('typescript-declaration-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const dev=require("./wp.dev");
@@ -35,6 +36,7 @@ module.exports=function(env,args)
                 moduleName:'"intoy-chosen"',
                 out:'./chosen.d.ts',
             })   */      
+            new TypescriptDeclarationPlugin({})
         ],
         //stats:"detailed",
         module:{
