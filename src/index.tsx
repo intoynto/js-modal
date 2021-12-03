@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Modal from "./Modal";
-import {Alert,AlertError} from "./alert";
+import {Alert,AlertError,AlertExclam,AlertWarn} from "./alert";
 import {LoadingOverlay} from "./loadingOverlay";
 
 function focusFirstChild(div:HTMLElement)
@@ -67,4 +67,4 @@ function modal(props:IModalProps)
     );
 }
 
-export {modal,Alert,AlertError,LoadingOverlay}
+export {modal,Alert,AlertError,AlertWarn,AlertExclam,LoadingOverlay}

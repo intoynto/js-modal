@@ -41,7 +41,7 @@ interface IModalProps {
     props: any;
 }
 export declare function modal(props: IModalProps): void;
-export { modal, Alert, AlertError, LoadingOverlay };
+export { modal, Alert, AlertError, AlertWarn, AlertExclam, LoadingOverlay };
 
 export declare const overlayLoadingClass = "loadingContainer";
 interface ILOvProps {

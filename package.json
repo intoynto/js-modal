@@ -1,6 +1,6 @@
 {
   "name": "intoy-modal",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "js modal",
   "main": "dist/modal.js",
   "typings": "dist/modal.d.ts",
